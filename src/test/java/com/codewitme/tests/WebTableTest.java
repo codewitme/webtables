@@ -20,7 +20,7 @@ public class WebTableTest {
 	WebDriver driver;
 	WebTable table;
 	@BeforeMethod
-	public void beforeClass(){
+	public void beforeClass() throws InterruptedException{
 		driver = new FirefoxDriver();
 		driver.get("http://the-internet.herokuapp.com/tables");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

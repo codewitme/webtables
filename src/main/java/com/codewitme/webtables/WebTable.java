@@ -11,8 +11,9 @@ public class WebTable {
 	
 	WebDriver driver;
 	
-	public WebTable(WebDriver driver){
+	public WebTable(WebDriver driver) throws InterruptedException{
 		this.driver=driver;
+		Thread.sleep(1);
 	}
 	
 	
